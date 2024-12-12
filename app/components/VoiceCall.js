@@ -15,7 +15,7 @@ const VoiceCall = () => {
   const peerRef = useRef(null); // For managing peer connection
 
   useEffect(() => {
-    const newSocket = io("https://rtc-server-sepia.vercel.app/");
+    const newSocket = io("https://rtc-server-5abw.onrender.com/");
     setSocket(newSocket);
 
     navigator.mediaDevices.getUserMedia({ audio: true }).then((stream) => {
